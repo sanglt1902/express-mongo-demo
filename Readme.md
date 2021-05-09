@@ -167,16 +167,5 @@ mongodb://root:example@localhost:27017/demodb?authSource=admin
 
 # Application data flow
 
-```sequence
-Client ->Controller: createProduct()
-Note right of Client: send a request to create a Product
-Controller->Service: createProduct()
-Service-> Repository: saveProduct()
-Repository-> MongoDb: save
-MongoDb -> Repository:return new product
-Note left of MongoDb: retrieve data from DB
-Repository->Service:  return new product
-Service ->Controller: return new product
-Controller->Client: return a product
-Note left of Controller: return a product already created
-```
+
+<img width="1125" alt="diagram data flow" src="https://user-images.githubusercontent.com/38729663/117580620-002f3e80-b123-11eb-8dc6-bce3c44f7b5e.png">
