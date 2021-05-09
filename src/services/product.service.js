@@ -1,4 +1,4 @@
-const prodrepository = require("../repositories/product.repo")
+const prodrepository = require("../repositories/product.repository")
 
 const createProduct = (product) => {
   return prodrepository.saveProduct(product);
