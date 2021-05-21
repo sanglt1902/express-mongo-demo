@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <div class="currency">
+      <select name="" id="input_currency">
+        <option value="EUR" selected>Euro</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="USD">US Dollar</option>
+        <option value="BTC">Bitcoin Digital Currency</option>
+        <option value="ETH">Ethereum Digital Currency</option>
+      </select>
+      <input type="number" name="" id="input_amount" value="1">
+    </div>
+    <div class="currency">
+      <select name="" id="output_currency">
+        <option value="EUR">Euro</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="USD" selected>US Dollar</option>
+        <option value="BTC">Bitcoin Digital Currency</option>
+        <option value="ETH">Ethereum Digital Currency</option>
+      </select>
+      <input type="number" name="" id="output_amount" placeholder="0" />
+    </div>
+    <div class="result">
+      <div class="rate" id="rate"></div>
+
+    </div>
+
+  </div>
+  <script type="text/javascript" src="function.js"></script>
+</body>
+
+</html>

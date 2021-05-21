@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(240, 225, 205);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/form-bk.jpg")
+    no-repeat center center;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+  opacity: 0.85;
+  background-color: #faf5f3;
+  margin-top: 10vh;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 10px 15px 10px 5px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  color: #000000;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.currency {
+  flex: 1;
+}
+
+.currency select {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  color: #ec7242;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align-last: center;
+}
+
+.currency input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  padding: 2px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 4px;
+  text-align: center;
+}
+.currency select option {
+  background-color: #89c095;
+  font-size: 1rem;
+  color: rgb(20, 41, 26);
+  text-align: center;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#exchange {
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  color: #213a25;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 0.3rem;
+  border: none;
+  /* border: 2px solid #000;*/
+  border-radius: 50%;
+}
+
+button#exchange:hover {
+  color: #213a25;
+  background-color: #569456;
+  border: none;
+  border-radius: 50%;
+}
+
+button#exchange:active {
+}
+
+.rate {
+  color: #ec7242;
+  width: 500px;
+  height: 35px;
+  border-radius: 15px;
+  border-radius: 35px;
+  margin: 40px 0px;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
