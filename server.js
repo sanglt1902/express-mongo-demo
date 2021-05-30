@@ -3,8 +3,15 @@ require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const app = express();
+const { ApolloServer } = require('apollo-server-express');
 const db = require("./src/models");
+const {typeDefs} = require("./src/graphql/shema")
+const {resolvers} = require("./src/graphql/resolvers")
+
+const server = new ApolloServer({ typeDefs, resolvers });
+server.start();
+const app = express();
+server.applyMiddleware({ app });
 
 db.mongoose
   .connect(db.url, {
@@ -29,7 +36,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-
 // // simple route
 // app.get("/", (req, res) => {
 //   res.json({ message: "Welcome to My first application." });
@@ -40,4 +46,5 @@ require("./src/routes/product.routes")(app);
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
+  console.log(`🚀 Server ready at http://localhost:8080${server.graphqlPath}`);
 });
