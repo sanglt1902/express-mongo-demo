@@ -19,7 +19,8 @@ STT|Content|
 ### <a id="sosanh"></a>2. RESTful vs GraphQL.
 suppose we have a page like:
 
-![](./image/cart.png)
+<img width="1349" alt="cart" src="https://user-images.githubusercontent.com/38729663/120095321-856ca880-c14f-11eb-87a1-42106761d374.png">
+
 
 ##### a. You must to call the requests to API endpoint like:
 RESTful|GraphQL|
